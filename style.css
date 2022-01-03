@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    background-color: red;
+}
+#navbar .nav-center{
+    margin: 0 40px;
+}
+#navbar .nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navbar .nav-header img{
+    height: 30px;
+}
+#navbar .links-container{
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    transition: .4s;
+}
+#navbar ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.fixed-nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#banner .image{
+    background: url('./images/banner-image.jpeg') no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+#about{
+    text-align: center;
+    margin: 5px 40px;
+    height: 300px;
+    background-color: yellow;
+}
+#service{
+    text-align: center;
+    margin: 5px 40px;
+    height: 300px;
+    background-color: springgreen;
+}
+#tours{
+    text-align: center;
+    margin: 5px 40px;
+    height: 300px;
+    background-color: yellow;
+}
+.footer{
+    height: 30px;
+    background-color: #1C2833;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.up-btn{
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    color: red;
+    background-color: cyan;
+    padding: 10px;
+    border-radius: 5px;
+    visibility: hidden;
+    z-index: -10;
+}
+.show-link{
+    visibility: visible;
+    z-index: 100;
+}
+
+@media screen and (min-width: 500px) {
+    #navbar .nav-center{
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #navbar .nav-header .btn{
+        display: none;
+    }
+    #navbar .links-container{
+        margin: 0 auto;
+        height: auto !important;
+    }
+    #navbar ul li{
+        display: inline;
+        list-style: none;
+        margin-left: 10px;
+    }
+    #navbar ul li a{
+        text-decoration: none;
+        color: white;
+    }
+}
